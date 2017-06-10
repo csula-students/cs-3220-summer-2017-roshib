@@ -1,10 +1,172 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title></title>
-</head>
-<body>
-	<h1>Hello world!</h1>
-</body>
+	<head>
+		<meta charset="UTF-8">
+		<title>Burrito Cafe</title>
+		<style>
+			*, *:before, *:after {
+				box-sizing: border-box;
+			}
+			.background {
+				margin: 0 auto;
+				width: 74em;
+				color: #000303;
+				background-color: #607c56;
+				border-radius: 10px;
+				padding-bottom: 3px;
+			}
+			section {
+				background-color: #8fb681;
+				box-shadow: 0 3px 3px rgba(0,0,0,0.12), 0 2px 2px rgba(0,0,0,0.24);
+				transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+				padding: 1em;
+				margin-bottom: 1em;
+				border-radius: 5px;
+			}
+			html, body {
+				font-family: "Lucida Grande";
+			}
+			body {
+				font-size: 18px;
+			}
+			button {
+				font-size: 16px;
+				padding: 0.2em 1em;
+				border-radius: 5px;
+				background-color: #566e4d;
+				border-color: #566e4d;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 2px 2px 2px rgba(0,0,0,0.24);
+				font-weight: bold;
+			}
+			button:hover {
+				background-color: #4b6143;
+			}
+			.login {
+				margin-top: -15px;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 2px 2px 2px rgba(0,0,0,0.24);
+			}
+			.signup {
+				margin-top: -15px;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 2px 2px 2px rgba(0,0,0,0.24);
+			}
+			table {
+				width: 100%;
+				border-collapse: collapse;
+			}
+			tr {
+				border: 3px solid #3a4a34;
+			}
+			th {
+				line-height: 3em;
+				text-align: center;
+			}
+			td {
+				line-height: 2em;
+				color: black;
+				border: 3px solid #3a4a34;
+				text-align: center;
+				border-radius: 5px;
+			}
+			th, td {
+				padding: 0.5em;
+			}
+			tbody > tr:hover {
+				background-color: #516948;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 2px 2px 2px rgba(0,0,0,0.24);
+			}
+			label {
+				display: block;
+				font-size: 0.9em;
+				color: black;
+				font-weight: bold;
+			}
+			input {
+				padding: 0.5em 1em;
+				margin-bottom: 1em;
+				min-width: 30em;
+				border: 3px solid #3a4a34;
+				box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 2px 2px 2px rgba(0,0,0,0.24);
+			}
+			.actions {
+				display: flex;
+				justify-content: flex-end;
+			}
+		</style>
+	</head>
+	<body>
+		<main class="background">
+			<h1 style="margin-left:580px; margin-bottom:-3px; ">Cafe Burrito</h1>
+			<section class="button" style="height:80px;">
+				<h5 style="margin-top:-10px; height:10px;">Log in/Sign up</h5>
+				<button class="login" >
+					Log in
+				</button>
+				<button class="signup">
+					Sign Up
+				</button>
+			</section>
+			<section class="menu">
+				<h2 style="margin-left:610px; margin-top:-10px;">Menu</h2>
+				<table>
+					<thead>
+						<tr>
+							<td style="font-weight: bold;">Name</td>
+							<td style="font-weight: bold;">Picture</td>
+							<td style="font-weight: bold;">Ingeredients</td>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>Alfredo Chicken Penne</td>
+							<td><img style="box-shadow: 3px 3px 3px rgba(0,0,0,0.12), 3px 3px 3px rgba(0,0,0,0.24); border-radius:5px;"  src="https://copymethat.blob.core.windows.net/media/one_pan_chicken_alfredo_20170111021020782111lot1cj.jpg" alt=""></td>
+							<td>
+							<ul style="list-style:none;">
+								<li>
+									3 tablespoons olive oil
+								</li>
+								<li>
+									2 cloves garlic
+								</li>
+								<li>
+									1 cup heavy cream
+								</li>
+								<li>
+									1 can chicken broth 14 oz
+								</li>
+							</ul></td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<h2 style="height: 20px; margin-top:-10px; margin-left:570px;">Create new recipes</h2>
+				<form action="" >
+					<fieldset style="border:2px solid #3a4a34; ">
+						<legend style="font-weight: bold;">
+							Basic information
+						</legend>
+						<label for="name">Name</label>
+						<input type="text" id="name">
+						<label for="image">Preview image url</label>
+						<input type="text" id="image">
+					</fieldset>
+					<fieldset style="border:2px solid #3a4a34; ">
+						<legend style="font-weight: bold;">
+							Ingredients
+						</legend>
+						<label for="ingredients">Ingredient</label>
+						<input type="text" id="ingredients">
+						<button  type="button">
+							Add ingredient
+						</button>
+					</fieldset>
+					<div class="actions">
+						<button style="margin-top:10px;" >
+							Create recipe
+						</button>
+					</div>
+				</form>
+			</section>
+		</main>
+	</body>
 </html>
