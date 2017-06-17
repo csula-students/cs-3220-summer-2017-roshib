@@ -274,8 +274,8 @@ option:checked {
 		bottom: 0;
 	}
 	.FooterItem {
-		margin-left: 3em;
-		font-size: 1.2em;
+		margin-left: 0;
+		font-size: 1em;
 		text-decoration: none;
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: black;
@@ -285,7 +285,7 @@ option:checked {
 	}
 	.FooterItemLast {
 		margin-left: 0;
-		font-size: 1.2em;
+		font-size: 1em;
 		text-decoration: none;
 		font-family: 'Open Sans Condensed', sans-serif;
 		color: black;
