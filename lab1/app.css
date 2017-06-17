@@ -257,7 +257,7 @@ option:checked {
 	.TableHeader {
 		font-size: 1.6em;
 	}
-	main.mainMobile {
+	.mainMobile {
 		padding-bottom: 200px;
 	}
 	footer {
