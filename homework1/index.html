@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<link rel="stylesheet" type="text/css" href="app.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+	<title>Burrito Cafe</title>
+</head>
+
+<body>
+	<header>
+		<section class="container">
+			<img class="logo" src="http://burrito-grill.com/wp-content/uploads/cropped-2-300x300.png" alt="">
+			<h1 class="title">Burrito Cafe</h1>
+			<span class="fill"></span>
+			<nav>
+				<a class="headList" href="menu.html">Menu</a>
+				<a class="headList" href="order.html">Order</a>
+				<a class="headList" href="index.html" style="margin-right:40px;">Statuses</a>
+			</nav>
+		</section>
+	</header>
+	<main>
+		<section class="order">
+			<label class="orderLable">Order Statuses</label>
+			<table class="order_status_table center" id="myTable">
+				<thead class="order_status_table">
+					<tr>
+						<th style="line-height: 2em;color: black;border: 3px solid #3a4a34; text-align: center;border-radius: 5px;font-weight: bold;" class="TableHeader" onclick="sortTable(0)">Created</th>
+						<th style="line-height: 2em;color: black;border: 3px solid #3a4a34; text-align: center;border-radius: 5px;font-weight: bold;" class="TableHeader" onclick="sortTable(1)">Item</th>
+						<th style="line-height: 2em;color: black;border: 3px solid #3a4a34; text-align: center;border-radius: 5px;font-weight: bold;" class="TableHeader" onclick="sortTable(2)">Total Price</th>
+						<th style="line-height: 2em;color: black;border: 3px solid #3a4a34; text-align: center;border-radius: 5px;font-weight: bold;" class="TableHeader" onclick="sortTable(3)">Status</th>
+					</tr>
+				</thead>
+				<tbody>
+				</tbody>
+			</table>
+			<div class="actions">
+				<button class="clear_history_button" style="margin-top:10px;">
+						Clear All
+					</button>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div>
+			<a class="FooterItem" href="menu.html">Term & Conditions</a>
+		</div>
+		<div>
+			<a class="FooterItem" href="menu.html">Privacy Statement</a>
+		</div>
+		<div>
+			<a class="FooterItem" href="menu.html">Cookie Policy</a>
+		</div>
+		<span class="fill"></span>
+		<div>
+			<p class="FooterItemLast">
+				© 2017 Burrito Cafe. All Rights Reserved.
+			</p>
+		</div>
+	</footer>
+	<script src="app.js"></script>
+</body>
+
+</html>
