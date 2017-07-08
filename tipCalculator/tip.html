@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="tip.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300" rel="stylesheet">
+    <title>Burrito Cafe</title>
+</head>
+
+<body>
+    <header>
+        <section class="container">
+            <img class="logo" src="http://burrito-grill.com/wp-content/uploads/cropped-2-300x300.png" alt="">
+            <h1 class="title">Burrito Cafe</h1>
+        </section>
+    </header>
+    <main>
+        <section class="order">
+           
+            <h1 class="orderLable">Tip Calculator</h1>
+
+            <label class="lable-input" for="billAmount">Total Amount Of Bill:</label><br>
+            <input class="input-in" type="text" id="billAmount"><br><br>
+
+            <label class="lable-input" for="percentTip">Percent To Tip:</label><br>
+            <input class="input-in" type="text" id="percentTip"><br><br>
+
+            <label class="lable-input" for="tip">Tip:</label><br>
+            <input class="input-in"  type="text" id="tip" disabled="disabled"><br><br>
+
+            <label class="lable-input" for="total">Total:</label><br>
+            <input class="input-in"   type="text" id="total" disabled="disabled"><br><br>
+
+            <label>&nbsp;</label>
+            <br>
+            <input class="button" style="margin-left:500px; padding:10px;font-size:20px;" type="button" id="calculate" value="Calculate"><br>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <a class="FooterItem" href="menu.html">Term & Conditions</a>
+        </div>
+        <div>
+            <a class="FooterItem" href="menu.html">Privacy Statement</a>
+        </div>
+        <div>
+            <a class="FooterItem" href="menu.html">Cookie Pulicy</a>
+        </div>
+        <span class="fill"></span>
+        <div>
+            <p class="FooterItemLast">
+                © 2017 Burrito Cafe. All Rights Reserved.
+            </p>
+        </div>
+    </footer>
+    <script src="tip.js"></script>
+</body>
+
+</html>
