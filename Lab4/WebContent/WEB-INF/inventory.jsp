@@ -27,13 +27,13 @@
 			</tr>
 		</thead>
 		<tbody>
-			<c:forEach items="${items}" var="item">
+			<c:forEach items="${food_items}" var="food_items">
 				<tr>
 					<td><fmt:formatDate value="${date}" type="time" /></td>
-					<td><img src="${item.getImage()}">
-						<br> ${item.getName()} &nbsp ${item.getPrice()}</td>
+					<td><img src="${food_items.getImage()}">
+						<br> ${food_items.getName()} &nbsp ${food_items.getPrice()}</td>
 					<td><form method="get">
-							<button name="Submit" value="${item.getName()}">Delete</button>
+							<button name="Submit" value="${food_items.getName()}">Delete</button>
 						</form></td>
 				</tr>
 			</c:forEach>

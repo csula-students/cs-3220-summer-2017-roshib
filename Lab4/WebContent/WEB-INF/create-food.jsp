@@ -54,7 +54,7 @@
 	</table>
 
 	</section></main>
-	<div style="padding-top:30px;"></div>
+	<div style="padding-top:70px;"></div>
 	<exe:footer />
 </body>
 </html>

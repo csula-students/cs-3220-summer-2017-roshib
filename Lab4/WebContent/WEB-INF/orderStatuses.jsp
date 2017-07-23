@@ -26,7 +26,7 @@
 					class="TableHeader" onclick="sortTable(0)">Created</th>
 				<th
 					style="line-height: 2em; color: black; border: 3px solid #3a4a34; text-align: center; border-radius: 5px; font-weight: bold;"
-					class="TableHeader" onclick="sortTable(2)">Item</th>
+					class="TableHeader" onclick="sortTable(2)">food_items</th>
 				<th
 					style="line-height: 2em; color: black; border: 3px solid #3a4a34; text-align: center; border-radius: 5px; font-weight: bold;"
 					class="TableHeader" onclick="sortTable(2)">Customer</th>
@@ -36,11 +36,11 @@
 
 			</tr>
 		<tbody>
-			<c:forEach items="${items}" var="item">
+			<c:forEach items="${food_items}" var="food_items">
 				<tr>
 					<td><fmt:formatDate value="${date}" type="time" /></td>
-					<td><img src="${item.getImage()}">
-						<br> ${item.getName()}&nbsp ${item.getPrice()}</td>
+					<td><img src="${food_items.getImage()}">
+						<br> ${food_items.getName()}&nbsp ${food_items.getPrice()}</td>
 					<td><p>Roshanak</p></td>
 					<td><form name="status" method="get" action="#">
 							<select>
