@@ -1,0 +1,12 @@
+<taglib>
+   <tlib-version>1.0</tlib-version>
+    <jsp-version>2.0</jsp-version>
+    <short-name>Custom header</short-name>
+   
+ 
+    <tag>
+       <name>customer_header</name>
+       <tag-class>lab7.CustomerHeader</tag-class>
+       <body-content>empty</body-content>
+    </tag>
+ </taglib>
