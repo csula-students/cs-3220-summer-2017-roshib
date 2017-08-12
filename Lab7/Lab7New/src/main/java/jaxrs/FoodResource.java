@@ -18,11 +18,10 @@ import java.util.List;
 import jaxrs.FoodEntry;
 
 @Path("")
-@Singleton // used to keep resource between requests otherwise request cope
+@Singleton 
 public class FoodResource {
     private FoodEntryDao dao = new FoodEntryDao();
 
-    /* Try /services/fooditems with a GET OR POST request, or /services/fooditem/:id with a GET, PUT, or DELETE request! */
 
     @GET
     @Path("fooditems")
@@ -42,13 +41,7 @@ public class FoodResource {
     @Path("fooditems")
     @Consumes(MediaType.APPLICATION_JSON)
     @Produces(MediaType.APPLICATION_JSON)
-    /* EXAMPLE TO PUT IN:
-    {   "id": 6,
-        "name": "Healing Salve",
-        "description": "Restores HP!",
-        "imgURL": "images/potion6.png",
-        "price": 1.5
-    } */
+ 
     public boolean addFoodItem(FoodEntry foodItem) {
         dao.add(foodItem);
         return true;
